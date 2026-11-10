@@ -67,13 +67,17 @@
     <div class="tag">Personal Website</div>
     <h1>Hey, I'm <span>Cdfreds</span>.</h1>
     <p>This is my website. I will be adding projects here soon.</p>
-    <button type="button" onclick="showMessage()">Projects</button>
+    <button type="button" onclick="showMessage1()">Projects</button>
+    <button type="button" onclick="showMessage2()">Polygon Rp</button>
     <div id="message" aria-live="polite"></div>
   </main>
   <footer>© <span id="year"></span> Cdfreds</footer>
   <script>
-    function showMessage() {
+    function showMessage1() {
       document.getElementById("message").textContent = "Coming Soon.";
+    }
+    function showMessage2() {
+      document.getElementById("message").textContent = "https://discord.gg/CJjbxfxFF9";
     }
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
